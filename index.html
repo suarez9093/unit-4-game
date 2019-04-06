@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Cereal Game</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+
+<body background="./assets/images/pebbles.jpg">
+
+<!-- Header -->
+<!-- ============================================================================================= -->
+<div class="header-box">
+  <header>
+      <h1 id="header">Cereal Collector</h1>
+  </header>
+</div>
+  
+<br>
+<!-- Instructions -->
+<!-- ======================================================================================================= -->
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-6">
+
+            <div class="card" style="width: 30em;">
+                <div class="card-body">
+                  <h5 class="card-title">Instrunctions</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Click on your favorite cereal characters below to start playing!</h6>
+                  <p class="card-text">1. By clicking on a character image below you will add a specific amount of points to your total score.</p>
+                  <p class="card-text">2. The value of each character is hidden until you click on it and then is updated in your total score</p>
+                  <p class="card-text">3. You win the game by matching your total score to a random number that is generated. You lose the game if your total score goes above the random number.</p>
+                  <p class="card-text">4. Each time the game starts, the game will change the values of each character.</p>
+                </div>
+            </div>
+
+          </div>
+     
+<!-- Score Sheet-->
+<!-- ============================================================================================================================== -->
+          <div class="col-sm-6">  
+
+                <div class="card" style="width: 30em;">
+                  <div class="card-body">
+                    <h5 class="card-title">Score Sheet</h5>
+                    <h6 class="card-subtitle mb-2 text-muted game-info" id="player-score">Your total score is: 0</h6>
+                    <p class="card-text game-info" id="wins">Wins:</p>
+                    <p class="card-text game-info" id="losses">Losses:</p>
+                    <p class="card-text game-info" id="random-number">Score: 0</p>
+                  </div>
+                </div>
+
+          </div>
+
+      </div>
+   
+<!-- Characters -->
+<!-- =========================================================================== -->
+
+<br>
+          <div class="row"> 
+
+                <div class="col-sm-12">
+                    <div class="character">
+                      <img src="./assets/images/tony.png" width="200px" id="tony" alt="tony">
+                      <img src="./assets/images/coco.png" width="200px" id="coco" alt="coco">
+                      <img src="./assets/images/lucky.png" width="200px" id="lucky" alt="lucky">
+                      <img src="./assets/images/trix.png" width="200px" id="trix" alt="trix">
+                    </div>
+                </div>
+
+          </div>
+
+      </div>
+                
+    <script src="./assets/javascript/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+#header {
+    font-family: 'Bubblegum Sans', cursive;
+    text-align: center;
+    color: rgb(247, 247, 247);
+    font-size: 90px;
+    background: orange;    
+}
+.instructions {
+    color: white;
+    background: green;
+}
+p {
+    color: black;
+    font-weight: bold;
+}
+.game-info {
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+.character {
+    background: white;
+    width: 820px;
+}
